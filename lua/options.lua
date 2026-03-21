@@ -7,7 +7,8 @@
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.o.relativenumber = true
+--  PERF: Yesss i luv me relative numbers
+vim.o.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
@@ -41,8 +42,9 @@ vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
 -- Configure how new splits should be opened
-vim.o.splitright = true
+-- PERF: Maybe this defaults to vertical now?
 vim.o.splitbelow = true
+vim.o.splitright = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
@@ -68,5 +70,10 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 -- See `:help 'confirm'`
 vim.o.confirm = true
+
+-- NOTE: HERE BE MINE OPTIONS
+
+-- Scroll Distance for e.g. <C-d> and <C-u> is now 15 instead of half screen
+vim.o.scroll = 15
 
 -- vim: ts=2 sts=2 sw=2 et

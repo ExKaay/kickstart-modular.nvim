@@ -42,14 +42,18 @@ require('lazy').setup({
 
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
+  -- PERF: I enabled neo-tree, so much better then netrw
+  --
+  -- TODO: I should try lint :thinking:
+  --
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.autopairs',
+  require 'kickstart.plugins.neo-tree',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -63,22 +67,24 @@ require('lazy').setup({
   -- you can continue same window with `<space>sr` which resumes last telescope search
 }, { ---@diagnostic disable-line: missing-fields
   ui = {
+    -- PERF: As i switched to NotoSansM NerdFont Mono i'll set it to an empty table
+    --
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
     icons = vim.g.have_nerd_font and {} or {
-      cmd = '⌘',
-      config = '🛠',
-      event = '📅',
-      ft = '📂',
-      init = '⚙',
-      keys = '🗝',
-      plugin = '🔌',
-      runtime = '💻',
-      require = '🌙',
-      source = '📄',
-      start = '🚀',
-      task = '📌',
-      lazy = '💤 ',
+      -- cmd = '⌘',
+      -- config = '🛠',
+      -- event = '📅',
+      -- ft = '📂',
+      -- init = '⚙',
+      -- keys = '🗝',
+      -- plugin = '🔌',
+      -- runtime = '💻',
+      -- require = '🌙',
+      -- source = '📄',
+      -- start = '🚀',
+      -- task = '📌',
+      -- lazy = '💤 ',
     },
   },
 })
