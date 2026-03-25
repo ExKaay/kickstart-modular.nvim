@@ -36,6 +36,8 @@ vim.o.smartcase = true
 vim.o.signcolumn = 'yes'
 
 -- Decrease update time
+-- NOTE: This affects some plugins *ASWELL* as how often the cache will be wriiten
+-- Let's not kill our SSD to fast lol
 vim.o.updatetime = 250
 
 -- Decrease mapped sequence wait time
@@ -43,6 +45,7 @@ vim.o.timeoutlen = 300
 
 -- Configure how new splits should be opened
 -- PERF: Maybe this defaults to vertical now?
+-- Or I#ll just use <C-w>v
 vim.o.splitbelow = true
 vim.o.splitright = true
 
