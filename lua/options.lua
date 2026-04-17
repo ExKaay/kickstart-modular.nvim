@@ -79,4 +79,8 @@ vim.o.confirm = true
 -- Scroll Distance for e.g. <C-d> and <C-u> is now 15 instead of half screen
 vim.o.scroll = 15
 
+-- PERF: Setting nvim-notify as the default Notifier
+-- ERROR: IT IS NOT WORKING!
+-- vim.notify = require 'notify'
+
 -- vim: ts=2 sts=2 sw=2 et
