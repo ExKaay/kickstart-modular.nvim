@@ -6,6 +6,13 @@ return {
   'm4xshen/hardtime.nvim',
   lazy = false,
   dependencies = { 'MunifTanjim/nui.nvim' },
-  opts = {},
+  opts = {
+    disabled_keys = {
+      -- Enable Arrowkeys, as i handle them in lua.keymaps
+      ['<Up>'] = false,
+      ['<Down>'] = false,
+      ['<Left>'] = false,
+      ['<Right>'] = false,
+    },
+  },
 }
--- TODO: i should add the configuration for this plugin
