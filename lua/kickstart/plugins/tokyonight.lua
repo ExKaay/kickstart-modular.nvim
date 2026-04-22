@@ -11,15 +11,35 @@ return {
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('tokyonight').setup {
+        -- use the style 'storm'
+        style = 'storm',
         styles = {
-          comments = { italic = false }, -- Disable italics in comments
+          -- Disable italics in comments
+          comments = { italic = false },
         },
+
+        -- NOTE: my configs
+        on_colors = function(colors) colors.comment = '#727BA5' end, -- Brighten the Comments
+        -- Setting Line Numbers to commentColor
+        on_highlights = function(hl, colors)
+          local commentColor = colors.comment
+          hl.LineNrAbove = {
+            fg = commentColor,
+          }
+          hl.LineNrBelow = {
+            fg = commentColor,
+          }
+          hl.DiagnosticUnnecessary = {
+            fg = commentColor,
+          }
+        end,
       }
 
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'minischeme'
+      -- NOTE: i also like 'minischeme'
+      vim.cmd.colorscheme 'tokyonight-storm'
     end,
   },
 }
