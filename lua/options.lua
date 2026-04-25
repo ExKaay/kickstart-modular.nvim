@@ -76,9 +76,10 @@ vim.o.confirm = true
 
 -- NOTE: HERE BE MINE OPTIONS
 
--- Scroll Distance for e.g. <C-d> and <C-u> is now 15 instead of half screen
-vim.o.scroll = 15
+-- OLD: Scroll Distance for e.g. <C-d> and <C-u> is now 15 instead of half screen
+-- PERF: Lets try halfscreen again
+-- vim.o.scroll = 15
 
--- NOTE: Theme is (at the monment) set in ~/.config/nvim/lua/kickstart/tokyonight.lua
+-- HACK: The theme is currently activated in their respective .lua setup
 
 -- vim: ts=2 sts=2 sw=2 et
