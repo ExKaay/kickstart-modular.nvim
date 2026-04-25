@@ -71,6 +71,20 @@ return {
         --   },
         -- },
         -- pickers = {}
+        pickers = {
+          buffers = {
+            initial_mode = 'normal', -- move with j/l
+            show_all_buffers = true,
+            sort_lastused = true,
+            theme = 'ivy',
+            -- previewer = false,
+            mappings = {
+              i = {
+                ['<c-d>'] = 'delete_buffer', -- delete (selected) buffers in insertmode
+              },
+            },
+          },
+        },
         extensions = {
           ['ui-select'] = { require('telescope.themes').get_dropdown() },
         },
