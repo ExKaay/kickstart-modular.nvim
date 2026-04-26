@@ -46,7 +46,7 @@ vim.o.timeoutlen = 300
 -- Configure how new splits should be opened
 -- NOTE: Maybe this defaults to vertical now?
 -- Or I#ll just use <C-w>v
-vim.o.splitbelow = false
+vim.o.splitbelow = true
 vim.o.splitright = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
