@@ -21,8 +21,23 @@ return {
         glow = true,
         theme = 'fluoromachine',
         transparent = true,
-      }
 
+        -- NOTE: sadly we need to redefine the standard color
+        colors = function(_, color)
+          return {
+            comment = color.darken('#f38e21', 20),
+          }
+        end,
+
+        -- WARNING: Use overrides for highlghtgroups; Damn, that took me long...
+        -- see https://github.com/maxmx03/fluoromachine.nvim/issues/18
+        overrides = function(c, color)
+          return {
+            ['LineNr'] = { fg = color.darken(c.orange, 20) },
+            ['CursorLineNr'] = { fg = c.orange, bold = true },
+          }
+        end,
+      }
       vim.cmd.colorscheme 'fluoromachine'
     end,
   },
