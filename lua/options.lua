@@ -80,6 +80,9 @@ vim.o.confirm = true
 -- PERF: Lets try halfscreen again
 -- vim.o.scroll = 15
 
+-- NOTE: This needs to be set for obsidian.nvim to replace checkboxes etc.
+vim.o.conceallevel = 1
+
 -- HACK: The theme is currently activated in their respective .lua setup
 
 -- vim: ts=2 sts=2 sw=2 et
