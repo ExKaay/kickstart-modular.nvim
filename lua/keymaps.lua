@@ -1,6 +1,9 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- NOTE: They Keymap for closing / deleting buffers from telescope is <C-d> and defined in telescope.lua
+-- ONLY available in insert mode to not conflict with preview scrolling!
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
