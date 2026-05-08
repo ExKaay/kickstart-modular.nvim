@@ -11,12 +11,17 @@ return {
     ---@diagnostic disable-next-line: missing-fields
     opts = {
       signs = true,
+      merge_keywords = false,
       keywords = {
         -- OLD, used for Comments that are no longer true / fitting
         OLD = {
           icon = '󱦟',
           color = '#C99404',
           alt = { 'RELICT', 'DEFUNCT', 'IGNORE', 'FALSE' },
+        },
+        -- Override INFO with a new color, otherwise it becomes unnessecary when i otherwise use NOTE
+        INFO = {
+          color = '#229944',
         },
       },
     },
