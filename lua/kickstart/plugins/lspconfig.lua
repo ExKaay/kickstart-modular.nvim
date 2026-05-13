@@ -129,7 +129,6 @@ return {
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
-        -- NOTE: currently only basls is working...
         bashls = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -182,10 +181,16 @@ return {
       vim.list_extend(ensure_installed, {
         -- You can add other tools here that you want Mason to install
         -- INFO: adding additional tools here for a better overview
-        shellcheck = {},
-        shfmt = {},
-        shellharden = {},
-        beautysh = {},
+
+        -- bash
+        'shellcheck',
+        'shfmt',
+        'shellharden',
+        'beautysh',
+
+        -- python
+        'black',
+        'isort',
       })
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
