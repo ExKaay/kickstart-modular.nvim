@@ -122,15 +122,15 @@ return {
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
+
+        -- INFO: Language server settings seem to be passed directly into the table that the ls is set to
+
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
-        shellcheck = {},
+        -- NOTE: currently only basls is working...
         bashls = {},
-        shellharden = {},
-        beautysh = {},
-        shfmt = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
@@ -140,6 +140,7 @@ return {
 
         stylua = {}, -- Used to format Lua code
 
+        --INFO: (For lua_ls)
         -- Special Lua Config, as recommended by neovim help docs
         lua_ls = {
           on_init = function(client)
@@ -180,6 +181,11 @@ return {
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         -- You can add other tools here that you want Mason to install
+        -- INFO: adding additional tools here for a better overview
+        shellcheck = {},
+        shfmt = {},
+        shellharden = {},
+        beautysh = {},
       })
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
