@@ -38,7 +38,8 @@ return {
           }
         end,
       }
-      vim.cmd.colorscheme 'fluoromachine'
+      -- OLD: the colorscheme is now defined in after/coloropts.lua based on the hostname
+      -- vim.cmd.colorscheme 'fluoromachine'
     end,
   },
 }
