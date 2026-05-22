@@ -125,9 +125,9 @@ return {
 
         -- INFO: Language server settings seem to be passed directly into the table that the ls is set to
 
-        -- clangd = {},
+        clangd = {},
         -- gopls = {},
-        -- pyright = {},
+        pyright = {},
         -- rust_analyzer = {},
         bashls = {},
         --
@@ -191,6 +191,16 @@ return {
         -- python
         'black',
         'isort',
+
+        -- markdown (linter)
+        'markdownlint',
+
+        -- json (linter)
+        'jsonlint',
+
+        -- text (linter)
+        -- NOTE: vale seems to be a multiuse linter
+        'vale',
       })
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
