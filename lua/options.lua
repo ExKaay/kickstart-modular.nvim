@@ -82,4 +82,7 @@ vim.o.confirm = true
 
 -- HACK: The theme is currently activated in their respective .lua setup
 
+-- Set the Indentationwidth to 2
+vim.o.shiftwidth = 2
+
 -- vim: ts=2 sts=2 sw=2 et
