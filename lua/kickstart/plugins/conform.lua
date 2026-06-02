@@ -40,6 +40,7 @@ return {
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
         -- bash = { 'beautysh', 'shellharden' },
         bash = { 'shfmt', 'shellharden' },
+        c = { 'clangd' },
       },
     },
   },
