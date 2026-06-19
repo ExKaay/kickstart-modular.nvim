@@ -14,5 +14,11 @@ return {
       ['<Left>'] = false,
       ['<Right>'] = false,
     },
+    hints = {
+      ['0wC'] = {
+        message = function() return 'Use S instead of 0wC' end,
+        length = 3,
+      },
+    },
   },
 }
