@@ -32,6 +32,8 @@ return {
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } }, -- Enable gitsigns recommended keymaps first
         { 'gr', group = 'LSP Actions', mode = { 'n' } },
+        { '<leader>o', group = '[O]bsidian', mode = { 'n' } },
+        { '<leader>oh', group = '[O]bsidian [H]elp', mode = { 'n' } },
       },
     },
   },

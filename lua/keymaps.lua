@@ -72,8 +72,29 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- NOTE: My Keymappings
-
+-- INFO: ToggleTerm bindings
 vim.keymap.set('n', '<leader>tt', '<Cmd>ToggleTerm size=20 dir=%:p:h direction=float name=ToggleTerm<CR>', { desc = 'Open [T]oggle[T]erm' })
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = 'Release ToggleTerm Controls' })
+
+-- INFO: obsidian.nvim bindings
+-- Groups defined in lua/custom/wich-key.lua
+vim.keymap.set({ 'n', 'v' }, '<leader>oA', vim.lsp.buf.code_action, { desc = '[O]bsidian [A]ctions' })
+
+vim.keymap.set('n', '<leader>ohf', '<Cmd>Obsidian help<CR>', { desc = '[O]bsidian [H]elp [F]iles' })
+vim.keymap.set('n', '<leader>ohs', '<Cmd>Obsidian helpgrep<CR>', { desc = '[O]bsidian [H]elp [S]earch' })
+vim.keymap.set('n', '<leader>oo', '<Cmd>Obsidian open<CR>', { desc = '[O]bsidian [O]pen (new Instance)' })
+vim.keymap.set('n', '<leader>oq', '<Cmd>Obsidian quick_switch<CR>', { desc = '[O]bsidian [Q]uickswitch' })
+vim.keymap.set('n', '<leader>os', '<Cmd>Obsidian search<CR>', { desc = '[O]bsidian [S]earch (grep)' })
+vim.keymap.set('n', '<leader>oc', '<Cmd>Obsidian check<CR>', { desc = '[O]bsidian [C]heck' })
+vim.keymap.set('n', '<leader>oy', '<Cmd>Obsidian new_from_template<CR>', { desc = '[O]bsidian New from [Y]Template' })
+vim.keymap.set('n', '<leader>on', '<Cmd>Obsidian new<CR>', { desc = '[O]bsidian New' })
+vim.keymap.set('n', '<leader>of', '<Cmd>Obsidian follow_link<CR>', { desc = '[O]bsidian [F]ollow Link' })
+vim.keymap.set('n', '<leader>ol', '<Cmd>Obsidian links<CR>', { desc = '[O]bsidian list [L]inks' })
+vim.keymap.set('n', '<leader>ob', '<Cmd>Obsidian backlinks<CR>', { desc = '[O]bsidian [B]backlinks' })
+vim.keymap.set('n', '<leader>ot', '<Cmd>Obsidian tags<CR>', { desc = '[O]bsidian list [T]ags' })
+vim.keymap.set('n', '<leader>ow', '<Cmd>Obsidian workspace<CR>', { desc = '[O]bsidian [W]orkspaces' })
+vim.keymap.set('n', '<leader>os', '<Cmd>Obsidian toc<CR>', { desc = '[O]bsidian [S]ections' })
+vim.keymap.set('n', '<leader>oa', '<Cmd>Obsidian template<CR>', { desc = '[O]bsidian [A]pply Template' })
+vim.keymap.set('n', '<leader>or', '<Cmd>Obsidian rename<CR>', { desc = '[O]bsidian [R]ename' })
 
 -- vim: ts=2 sts=2 sw=2 et
