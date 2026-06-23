@@ -82,7 +82,7 @@ vim.keymap.set({ 'n', 'v' }, '<leader>oA', vim.lsp.buf.code_action, { desc = '[O
 
 vim.keymap.set('n', '<leader>ohf', '<Cmd>Obsidian help<CR>', { desc = '[O]bsidian [H]elp [F]iles' })
 vim.keymap.set('n', '<leader>ohs', '<Cmd>Obsidian helpgrep<CR>', { desc = '[O]bsidian [H]elp [S]earch' })
-vim.keymap.set('n', '<leader>oo', '<Cmd>Obsidian open<CR>', { desc = '[O]bsidian [O]pen (new Instance)' })
+vim.keymap.set('n', '<leader>oO', '<Cmd>Obsidian open<CR>', { desc = '[O]bsidian [O]pen (new Instance)' })
 vim.keymap.set('n', '<leader>oq', '<Cmd>Obsidian quick_switch<CR>', { desc = '[O]bsidian [Q]uickswitch' })
 vim.keymap.set('n', '<leader>os', '<Cmd>Obsidian search<CR>', { desc = '[O]bsidian [S]earch (grep)' })
 vim.keymap.set('n', '<leader>oc', '<Cmd>Obsidian check<CR>', { desc = '[O]bsidian [C]heck' })
