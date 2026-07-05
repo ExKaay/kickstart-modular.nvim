@@ -22,16 +22,16 @@ return {
       format = 'absolute',
       style = 'wiki',
     },
-    templates = {
-      folder = '03 - Templates',
-      date_format = 'YYYY-MM-DD',
-      time_format = 'hh:mm',
-      substitutions = {},
-    },
     workspaces = {
       {
         name = 'GSynced Vault',
         path = '~/Documents/Obsidian/GSynced Vault',
+        templates = {
+          folder = '03 - Templates',
+          date_format = 'YYYY-MM-DD',
+          time_format = 'hh:mm',
+          substitutions = {},
+        },
       },
       {
         name = 'no-vault',
