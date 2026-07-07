@@ -201,6 +201,9 @@ return {
         -- text (linter)
         -- NOTE: vale seems to be a multiuse linter
         'vale',
+
+        --NOTE: prettierd should also be multiuse
+        'prettierd',
       })
 
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
