@@ -34,6 +34,7 @@ return {
         { 'gr', group = 'LSP Actions', mode = { 'n' } },
         { '<leader>o', group = '[O]bsidian', mode = { 'n' } },
         { '<leader>oh', group = '[O]bsidian [H]elp', mode = { 'n' } },
+        { '<leader>O', group = '[O]rgmode', mode = { 'n' } },
       },
     },
   },

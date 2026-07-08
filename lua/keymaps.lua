@@ -76,8 +76,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set('n', '<leader>tt', '<Cmd>ToggleTerm size=20 dir=%:p:h direction=float name=ToggleTerm<CR>', { desc = 'Open [T]oggle[T]erm' })
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = 'Release ToggleTerm Controls' })
 
--- INFO: obsidian.nvim bindings
--- Groups defined in lua/custom/wich-key.lua
+-- INFO: Groups defined in lua/custom/wich-key.lua
+-- NOTE: obsidian.nvim bindings
 vim.keymap.set({ 'n', 'v' }, '<leader>oA', vim.lsp.buf.code_action, { desc = '[O]bsidian [A]ctions' })
 
 vim.keymap.set('n', '<leader>ohf', '<Cmd>Obsidian help<CR>', { desc = '[O]bsidian [H]elp [F]iles' })
