@@ -32,6 +32,8 @@ return {
         -- OLD, used for Comments that are no longer true / fitting
         OLD = { icon = '󱦟', color = '#C99404', alt = { 'RELICT', 'DEFUNCT', 'IGNORE', 'FALSE' } },
 
+        CHNG = { icon = '', color = '#99ddf4', alt = { 'MARK', 'HERE', 'IGNORE', 'REMARK' } },
+
         -- Override INFO with a new color, otherwise it becomes unnessecary when i otherwise use NOTE
         INFO = { color = '#229944' },
       },
