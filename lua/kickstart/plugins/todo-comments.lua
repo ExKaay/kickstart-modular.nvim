@@ -23,16 +23,16 @@ return {
         },
         TODO = { icon = ' ', color = 'info' },
         HACK = { icon = ' ', color = 'warning' },
-        WARN = { icon = ' ', color = 'warning', alt = { 'WARNING', 'XXX' } },
+        WARN = { icon = ' ', color = 'warning', alt = { 'WARNING', 'XXX', 'WEIRD' } },
         PERF = { icon = ' ', alt = { 'OPTIM', 'PERFORMANCE', 'OPTIMIZE' } },
-        NOTE = { icon = ' ', color = 'hint' },
+        NOTE = { icon = ' ', color = 'hint', 'REMARK' },
         TEST = { icon = '⏲ ', color = 'test', alt = { 'TESTING', 'PASSED', 'FAILED' } },
         -- END OF DEFAULTS
 
         -- OLD, used for Comments that are no longer true / fitting
         OLD = { icon = '󱦟', color = '#C99404', alt = { 'RELICT', 'DEFUNCT', 'IGNORE', 'FALSE' } },
 
-        CHNG = { icon = '', color = '#99ddf4', alt = { 'MARK', 'HERE', 'IGNORE', 'REMARK' } },
+        CHNG = { icon = '', color = '#99ddf4', alt = { 'MARK', 'HERE', 'IGNORE' } },
 
         -- Override INFO with a new color, otherwise it becomes unnessecary when i otherwise use NOTE
         INFO = { color = '#229944' },
