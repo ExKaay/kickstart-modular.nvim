@@ -27,7 +27,7 @@ return {
         name = 'GSynced Vault',
         path = '~/Documents/Obsidian/GSynced Vault',
         templates = {
-          folder = '03 - Templates',
+          folder = '/home/exkay/Documents/Obsidian/GSynced Vault/03 - Templates',
           date_format = 'YYYY-MM-DD',
           time_format = 'hh:mm',
           substitutions = {},
@@ -44,7 +44,7 @@ return {
           notes_subdir = vim.NIL, -- have to use 'vim.NIL' instead of 'nil'
           new_notes_location = 'current_dir',
           templates = {
-            folder = vim.NIL,
+            folder = vim.NIL, -- have to use 'vim.NIL' instead of 'nil'
           },
           frontmatter = {
             enabled = false,
