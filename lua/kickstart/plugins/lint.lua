@@ -11,6 +11,8 @@ return {
       markdown = { 'markdownlint' },
       json = { 'jsonlint' },
       text = { 'vale' },
+      --CHNG: added linters
+      ansible = { 'ansible-lint' },
     }
 
     -- To allow other plugins to add linters to require('lint').linters_by_ft,
