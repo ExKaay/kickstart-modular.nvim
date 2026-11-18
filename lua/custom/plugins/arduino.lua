@@ -1,3 +1,5 @@
+---@module 'lazy'
+---@type LazySpec
 return {
   'yuukiflow/Arduino-Nvim',
   ft = 'arduino',
