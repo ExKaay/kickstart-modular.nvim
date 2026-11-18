@@ -1,0 +1,7 @@
+---@module 'lazy'
+---@type LazySpec
+return {
+  'pearofducks/ansible-vim',
+  ft = { 'ansible', 'yaml.ansible' },
+  version = '*',
+}
