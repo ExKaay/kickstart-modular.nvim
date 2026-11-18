@@ -1,7 +1,7 @@
 {
   "Arduino-Nvim": { "branch": "main", "commit": "c9983b5ead3b2ce574d9bcb9708febad0f8ddbd7" },
   "LuaSnip": { "branch": "master", "commit": "642b0c595e11608b4c18219e93b88d7637af27bc" },
-  "ansible-vim": { "branch": "master", "commit": "9e020fbb31b4959ea12d97afa78a90c7528ac109" },
+  "ansible-doc.nvim": { "branch": "master", "commit": "4837f7df0d4dbfe5cd19976c8612ab3fb889397f" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
   "conform.nvim": { "branch": "master", "commit": "016802de402556da54c36bd7359b441266b01cdd" },
   "cyberdream.nvim": { "branch": "main", "commit": "39e1fda12c0704e01029b286a4c7e77e33a0c5cd" },
@@ -9,6 +9,7 @@
   "fidget.nvim": { "branch": "main", "commit": "9e0201673e08e997e7cf52afca5565c70bd117f3" },
   "fluoromachine.nvim": { "branch": "main", "commit": "a279f667168e742df059caf1f1f4daf1de24f4f8" },
   "friendly-snippets": { "branch": "main", "commit": "6cd7280adead7f586db6fccbd15d2cac7e2188b9" },
+  "fzf-lua": { "branch": "main", "commit": "82ddfe6efc56480c052fd213e0cbb2f024dfd754" },
   "gitsigns.nvim": { "branch": "main", "commit": "5be654f2232c10ddcad19c1607a67b6b4b78fc29" },
   "guess-indent.nvim": { "branch": "main", "commit": "84a4987ff36798c2fc1169cbaff67960aed9776f" },
   "hardtime.nvim": { "branch": "main", "commit": "244753782b945def87472d8f4e9e6a9d4ec18689" },
